@@ -16,8 +16,9 @@ namespace MaterialDesignDemo.Domain
             {
                 model.PropertyChanged += (sender, args) =>
                 {
-                    if (args.PropertyName == nameof(SelectableViewModel.IsSelected))
-                        OnPropertyChanged(nameof(IsAllItems1Selected));
+                    if (args.PropertyName == nameof(SelectableViewModel.isSelected))
+                        var i = nameof(IsAllItems1Selected);
+                        OnPropertyChanged(i);
                 };
             }
         }
